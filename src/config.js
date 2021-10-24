@@ -37,7 +37,30 @@ const speakers = [
   },
 ];
 
-const team = [
+const teachers = [
+  {
+    name: "James Doe",
+    description: "role 1, role 2",
+    img: "https://unsplash.it/240/240",
+  },
+  {
+    name: "James Doe",
+    description: "role 1, role 2",
+    img: "https://unsplash.it/240/240",
+  },
+  {
+    name: "James Doe",
+    description: "role 1, role 2",
+    img: "https://unsplash.it/240/240",
+  },
+  {
+    name: "James Doe",
+    description: "role 1, role 2",
+    img: "https://unsplash.it/240/240",
+  },
+];
+
+const students = [
   {
     name: "John Doe",
     description: "role 1, role 2",
@@ -100,4 +123,27 @@ const team = [
   },
 ];
 
-export { speakers, team };
+const guests = [
+  {
+    name: "Jessica Doe",
+    description: "role 1, role 2",
+    img: "https://unsplash.it/250/250",
+  },
+  {
+    name: "Jessica Doe",
+    description: "role 1, role 2",
+    img: "https://unsplash.it/250/250",
+  },
+  {
+    name: "Jessica Doe",
+    description: "role 1, role 2",
+    img: "https://unsplash.it/250/250",
+  },
+  {
+    name: "Jessica Doe",
+    description: "role 1, role 2",
+    img: "https://unsplash.it/250/250",
+  },
+];
+
+export { speakers, teachers, students, guests };

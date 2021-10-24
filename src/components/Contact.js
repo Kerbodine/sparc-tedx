@@ -6,11 +6,7 @@ export default function Contact() {
   return (
     <div className="px-8 pt-8 mx-auto max-w-4xl flex flex-col-reverse md:flex-row gap-8 pb-16">
       <form className="flex flex-col gap-2">
-        <h2 className="text-2xl font-bold leading-4">
-          Contact Us:
-          <br />
-          <span className="text-sm text-gray-500 font-normal">*required</span>
-        </h2>
+        <h2 className="text-2xl font-bold text-ted-red">Contact Us:</h2>
         <div className="flex gap-4">
           <div className="w-full">
             <FormInput
@@ -54,6 +50,7 @@ export default function Contact() {
             className="w-full h-28 resize-none bg-gray-100 rounded-md outline-none p-2 focus:ring-2 focus:ring-ted-red"
           />
         </div>
+        <p className="text-sm text-gray-500 -mt-2">*required</p>
         <button
           type="submit"
           className="px-4 py-2 bg-gray-200 text-black hover:text-white hover:bg-ted-red rounded-md"
