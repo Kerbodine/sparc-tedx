@@ -1,6 +1,7 @@
 import React from "react";
 import Speaker from "./Speaker";
 import { ReactComponent as SpeakerIcon } from "./speaker.svg";
+import { speakers } from "../config";
 
 export default function Speakers() {
   return (
@@ -8,7 +9,7 @@ export default function Speakers() {
       <div className="w-full bg-gray-900 rounded-xl text-white p-8 flex gap-4">
         <div>
           <h2 className="text-2xl font-medium leading-6 mb-2">
-            Become a TEDx speaker
+            Become a TEDxVSA speaker
           </h2>
           <p className="w-full text-gray-300">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
@@ -23,12 +24,14 @@ export default function Speakers() {
       </div>
       <h2 className="mt-8 text-xl font-bold mb-2">All Speakers:</h2>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
-        <Speaker />
-        <Speaker />
-        <Speaker />
-        <Speaker />
-        <Speaker />
-        <Speaker />
+        {speakers.map((speaker) => (
+          <Speaker
+            name={speaker.name}
+            description={speaker.description}
+            talk={speaker.talk}
+            img={speaker.img}
+          />
+        ))}
       </div>
     </div>
   );

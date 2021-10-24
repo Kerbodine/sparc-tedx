@@ -23,6 +23,9 @@ export default function Navbar() {
         <Link to="/contact" aria-label="Contact">
           <NavbarItem title="Contact" path="/contact" />
         </Link>
+        <Link to="/team" aria-label="Our team">
+          <NavbarItem title="Our Team" path="/team" />
+        </Link>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Speakers from "./components/Speakers";
 import Talks from "./components/Talks";
+import Team from "./components/Team";
 
 function App() {
   const [showBanner, setShowBanner] = useState(true);
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact />
+          </Route>
+          <Route exact path="/team">
+            <Team />
           </Route>
         </Switch>
       </Router>
