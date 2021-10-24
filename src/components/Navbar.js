@@ -10,7 +10,7 @@ export default function Navbar() {
       <Link to="/" aria-label="Home">
         <Logo className="h-16" />
       </Link>
-      <div className="ml-auto flex gap-2">
+      <div className="ml-auto flex gap-4">
         <Link to="/" aria-label="Home">
           <NavbarItem title="Home" path="/" />
         </Link>

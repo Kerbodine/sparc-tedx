@@ -22,7 +22,7 @@ export default function Speakers() {
         <SpeakerIcon className="flex-none hidden md:block w-64 rounded-xl" />
       </div>
       <h2 className="mt-8 text-xl font-bold mb-2">All Speakers:</h2>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
         <Speaker />
         <Speaker />
         <Speaker />

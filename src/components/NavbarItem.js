@@ -13,7 +13,11 @@ export default function NavbarItem({ title, path }) {
 
   return (
     <div className="font-medium h-10 relative flex items-center group">
-      <p className={`text-gray-700 z-10 px-2 py-1 rounded-md`}>{title}</p>
+      <p
+        className={`text-gray-700 z-10 px-1 py-1 rounded-md uppercase font-semibold`}
+      >
+        {title}
+      </p>
       <div
         className={`absolute bottom-0 w-full h-1 ${
           active ? "bg-ted-red" : "group-hover:bg-gray-300"
