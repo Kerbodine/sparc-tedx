@@ -15,7 +15,9 @@ export default function NavbarItem({ title, path }) {
     <div className="font-medium h-10 relative flex items-center group">
       <p className={`text-gray-700 z-10 px-2 py-1 rounded-md`}>{title}</p>
       <div
-        className={`absolute bottom-0 w-full h-1 ${active ? "bg-ted-red" : ""}`}
+        className={`absolute bottom-0 w-full h-1 ${
+          active ? "bg-ted-red" : "group-hover:bg-gray-300"
+        }`}
       ></div>
     </div>
   );

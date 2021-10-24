@@ -17,8 +17,8 @@ export default function Navbar() {
         <Link to="/speakers" aria-label="Speakers">
           <NavbarItem title="Speakers" path="/speakers" />
         </Link>
-        <Link to="/watch" aria-label="Watch talks">
-          <NavbarItem title="Watch talks" path="/watch" />
+        <Link to="/talks" aria-label="Talks">
+          <NavbarItem title="Talks" path="/talks" />
         </Link>
         <Link to="/contact" aria-label="Contact">
           <NavbarItem title="Contact" path="/contact" />
