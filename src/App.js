@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Speakers from "./components/Speakers";
@@ -11,13 +12,13 @@ function App() {
   const [showBanner, setShowBanner] = useState(true);
 
   return (
-    <div className="App mb-32">
+    <div className="App">
       {showBanner ? <Banner setShowBanner={setShowBanner} /> : null}
       <Router>
         <Navbar />
         <Switch>
           <Route exact path="/">
-            <Home />
+            <Home banner={showBanner} />
           </Route>
           <Route exact path="/speakers">
             <Speakers />
@@ -30,6 +31,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Footer />
     </div>
   );
 }
