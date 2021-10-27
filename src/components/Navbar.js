@@ -37,7 +37,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="w-full h-20 bg-gray-100 flex items-center px-8">
+      <div className="w-full h-20 bg-gray-100 flex items-center px-4 sm:px-8">
         <Link to="/" aria-label="Home">
           <Logo className="h-16" />
         </Link>

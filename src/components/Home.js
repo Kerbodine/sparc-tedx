@@ -4,7 +4,9 @@ export default function Home({ banner }) {
   return (
     <video
       className={`w-screen ${
-        banner ? "h-[calc(100vh-8rem)]" : "h-[calc(100vh-5rem)]"
+        banner
+          ? "h-[calc(100vh-10rem)] sm:h-[calc(100vh-8rem)]"
+          : "h-[calc(100vh-5rem)]"
       } object-cover`}
       autoplay="autoplay"
       muted
