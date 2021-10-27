@@ -4,9 +4,14 @@ import { ReactComponent as ContactIcon } from "./contact.svg";
 
 export default function Contact() {
   return (
-    <div className="px-8 pt-8 mx-auto max-w-4xl flex flex-col-reverse md:flex-row gap-8 pb-16">
+    <div className="px-8 py-16 mx-auto max-w-4xl flex flex-col-reverse md:flex-row gap-8 pb-16">
       <form className="flex flex-col gap-2">
-        <h2 className="text-2xl font-bold text-ted-red">Contact Us:</h2>
+        <div className="mb-2">
+          <h2 className="text-2xl font-bold text-ted-red">Contact Us:</h2>
+          <p className="text-sm text-gray-500">
+            Your message will be sent our event managers
+          </p>
+        </div>
         <div className="flex gap-4">
           <div className="w-full">
             <FormInput
@@ -25,18 +30,22 @@ export default function Contact() {
             />
           </div>
         </div>
-        <FormInput
-          label="Email address: *"
-          id="email"
-          type="email"
-          required="true"
-        />
-        <FormInput
-          label="Subject: *"
-          id="subject"
-          type="subject"
-          required="true"
-        />
+        <div>
+          <FormInput
+            label="Email address: *"
+            id="email"
+            type="email"
+            required="true"
+          />
+        </div>
+        <div>
+          <FormInput
+            label="Subject: *"
+            id="subject"
+            type="subject"
+            required="true"
+          />
+        </div>
         <div>
           <label
             htmlFor="message"
